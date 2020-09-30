@@ -1,0 +1,11 @@
+@mixin autofill($color) {
+	&:-webkit-autofill,
+	&:-webkit-autofill:hover,
+	&:-webkit-autofill:focus,
+	&:-webkit-autofill:active  {
+		transition: background-color 0s ease-in-out 50000s;
+		-webkit-text-fill-color: #{$color} !important;
+	}
+}
+
+//@include autofill('red')

@@ -1,0 +1,129 @@
+@import '../../assets/styles/mixins/variables';
+@import '../../assets/styles/mixins/breakpoints';
+@import '../../assets/styles/mixins/hover';
+
+@keyframes bookmarkIcon01 {
+	from {
+		transform: translate(0px, 60px);
+	}
+	to {
+		transform: translate(0px, 0);
+	}
+}
+@keyframes bookmarkIcon02 {
+	from {
+		transform: rotate(35deg) translate(0px, 60px);
+	}
+	to {
+		transform: rotate(35deg) translate(0px, 0);
+	}
+}
+@keyframes bookmarkIcon03 {
+	from {
+		transform: rotate(-35deg) translate(0px, 60px);
+	}
+	to {
+		transform: rotate(-35deg) translate(0px, 0);
+	}
+}
+@keyframes bookmarkStar {
+	from {
+		transform: scale(0.5);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+.bookmark {
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1000;
+	background: $color-purple-dark;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: white;
+	display: none;
+	&_is-active {
+		display: flex;
+	}
+
+	&__icon {
+		color: $color-yellow-base;
+		animation-name: bookmarkStar;
+		animation-duration: $transition-time * 2;
+		animation-fill-mode: forwards;
+	}
+
+	&__line-01,
+	&__line-02,
+	&__line-03 {
+		border: 5px solid $color-yellow-base;
+		position: absolute;
+		height: 40px;
+		border-radius: 100px;
+		top: -60px;
+		left: calc(50% - 5px);
+		animation-duration: $transition-time * 3;
+		animation-fill-mode: forwards;
+	}
+	&__line-01 {
+		margin-top: -20px;
+		animation-name: bookmarkIcon01;
+	}
+	&__line-02 {
+		margin-left: 71px;
+		margin-top: 20px;
+		animation-name: bookmarkIcon02;
+	}
+	&__line-03 {
+		margin-left: -71px;
+		margin-top: 20px;
+		animation-name: bookmarkIcon03;
+	}
+
+	&__content {
+		animation: $transition-time * 2 fadeIn;
+		animation-fill-mode: forwards;
+	}
+
+	&__img {
+		position: relative;
+		margin-bottom: 40px;
+	}
+
+	&__title {
+		font-size: 40px;
+		line-height: $line-height;
+		font-weight: $font-weight-bold;
+		letter-spacing: 0.03em;
+		color: $color-yellow-base;
+		text-transform: uppercase;
+	}
+
+	&__subtitle {
+		font-size: 34px;
+		line-height: $line-height;
+		margin-bottom: 60px;
+	}
+
+	&__command {
+		font-size: 40px;
+		line-height: $line-height;
+		font-weight: $font-weight-bold;
+	}
+
+	&__close {
+		position: fixed;
+		top: 30px;
+		right: 30px;
+		color: inherit;
+		padding: 20px;
+		outline: none;
+		@include hover;
+	}
+}

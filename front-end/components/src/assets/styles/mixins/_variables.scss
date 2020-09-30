@@ -1,0 +1,112 @@
+// https://ant.design/docs/spec/colors
+
+$body-background: white;
+
+$footer-background: rgba(0, 0, 0, 0.65);
+$footer-color: #cecece;
+
+$color-white: white;
+
+$color-default: rgba(0, 0, 0, 0.85);
+
+$color-cyan-lightness: #87e8de; // 3
+$color-cyan-lighter: #5cdbd3; // 4
+$color-cyan-light: #36cfc9; // 5
+$color-cyan-base: #13c2c2; // 6
+$color-cyan-dark: #08979c; // 7
+
+$color-orange-base: #fa8c16; // 6
+
+$color-blue-base: #1890ff; // 6
+$color-blue-dark: #096dd9; // 7
+$color-blue-darkness: #002766; // 10
+
+$color-gray-lightness: #f5f5f5; // 3
+$color-gray-lighter: #e8e8e8; // 4
+$color-gray-light: #d9d9d9; // 5
+$color-gray-base: #bfbfbf; // 6
+$color-gray-dark: #8c8c8c; // 7
+$color-gray-darker: #595959; // 8
+$color-gray-darkness: #262626; // 9
+
+$color-green-lightness: #73d13d; // 5
+$color-green-lighter: #52c41a; // 6
+$color-green-light: #389e0d; // 7
+$color-green-base: #237804; // 8
+
+$color-red-light: #ff4d4f; // 5
+$color-red-base: #f5222d; // 6
+$color-red-dark: #cf1322; // 7
+
+$color-purple-lightness: #f9f0ff; // 1
+$color-purple-lighter: #9254de; // 6
+$color-purple-light: #722ed1; // 6
+$color-purple-base: #531dab; // 7
+$color-purple-dark: #391085; // 8
+
+$color-yellow-base: #FADB14; // 6
+
+$font-family: arial, sans-serif;
+
+$font-weight-base: 400;
+$font-weight-bold: 600;
+
+$font-size-base: 16px;
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+
+$h1-font-size: 38px;
+$h2-font-size: 30px;
+$h3-font-size: 24px;
+$h4-font-size: 20px;
+$h5-font-size: 16px;
+$h6-font-size: 14px;
+
+$h1-font-size-tablet: 32px;
+$h2-font-size-tablet: 26px;
+$h3-font-size-tablet: 20px;
+$h4-font-size-tablet: 18px;
+
+$h1-font-size-mobile: 26px;
+$h2-font-size-mobile: 22px;
+$h3-font-size-mobile: 18px;
+$h4-font-size-mobile: 16px;
+
+$margin-base: 24px;
+$margin-xl: $margin-base * 4;
+$margin-lg: $margin-base * 2;
+$margin-sm: $margin-base / 2;
+$margin-xs: $margin-base / 4;
+
+$padding-inside: 20px; // Отступ в карточках
+
+$border-radius-base: 4px;
+
+$line-height: 1.4em;
+$line-height-sm: 1.2em;
+
+$link-primary-color: $color-blue-dark;
+$link-secondary-color: $color-gray-dark;
+$link-hover-color: $color-blue-base;
+
+$hover-opacity: .8;
+
+// Grid
+$grid-columns: 3;
+$grid-gutter-width: 16px;
+
+$transition-time: 240ms;
+
+// Components
+$header-bg: $color-purple-base;
+$header-height: 80px;
+$header-height-mobile: 60px;
+
+$field-size-default: 16px;
+$field-size-large: 18px;
+$field-color-default: $color-gray-dark;
+$field-color-error: $color-red-base;
+
+$sector-padding: $padding-inside * 4;
+$sector-padding-mobile: $padding-inside * 3;
+$sector-title-margin: $padding-inside * 3;

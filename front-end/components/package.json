@@ -1,0 +1,42 @@
+{
+  "name": "front-end",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "antd": "^3.11.0",
+    "bem-cn": "^3.0.1",
+    "final-form": "^4.10.0",
+    "node-sass": "^4.14.1",
+    "object-diff": "^0.0.4",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-final-form": "^3.6.5",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
+    "react-svg": "^11.0.41",
+    "sprintf-js": "^1.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

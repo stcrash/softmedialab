@@ -1,0 +1,8 @@
+@import "./variables";
+
+@mixin hover {
+	transition: opacity $transition-time;
+	&:hover{
+		opacity: $hover-opacity;
+	}
+}
